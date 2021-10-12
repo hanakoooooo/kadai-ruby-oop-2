@@ -1,7 +1,7 @@
 class Menter
  attr_accessor :name
  
- def initialize
+ def initialize(name)
      self.name = name
  end
      
@@ -17,11 +17,9 @@ class RailsMentor < Menter
  end
 end
 
-kirameki = Menter.new
-kirameki.name = '煌木'
+kirameki = Menter.new('煌木')
 
-akaide = RailsMentor.new
-akaide.name = '赤出'
+akaide = RailsMentor.new('赤出')
 
 kirameki.job
 akaide.job
